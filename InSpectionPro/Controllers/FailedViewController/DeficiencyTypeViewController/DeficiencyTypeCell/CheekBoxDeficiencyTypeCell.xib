@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CheekBoxDeficiencyTypeCell" rowHeight="65" id="KGk-i7-Jjw" customClass="CheekBoxDeficiencyTypeCell" customModule="InSpectionPro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="86l-QK-sLg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kr-bO-MZc">
+                                <rect key="frame" x="75" y="22" width="86" height="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpV-eU-mwd">
+                                <rect key="frame" x="26" y="18" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="fgI-uX-kMo"/>
+                                    <constraint firstAttribute="height" constant="25" id="gjU-Gx-jCa"/>
+                                </constraints>
+                                <state key="normal" image="blue-checkbox-30"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tx7-oy-tfx">
+                                <rect key="frame" x="139" y="38" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="FXD-pq-4RY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xpV-eU-mwd" firstAttribute="leading" secondItem="86l-QK-sLg" secondAttribute="leading" constant="26" id="0Tz-ou-kD5"/>
+                            <constraint firstItem="tx7-oy-tfx" firstAttribute="top" secondItem="86l-QK-sLg" secondAttribute="top" constant="38" id="FbZ-Fe-TEC"/>
+                            <constraint firstItem="tx7-oy-tfx" firstAttribute="centerX" secondItem="86l-QK-sLg" secondAttribute="centerX" id="M54-y8-aju"/>
+                            <constraint firstItem="6kr-bO-MZc" firstAttribute="leading" secondItem="xpV-eU-mwd" secondAttribute="trailing" constant="24" id="a54-2o-FM2"/>
+                            <constraint firstAttribute="bottom" secondItem="tx7-oy-tfx" secondAttribute="bottom" constant="0.5" id="aq7-5e-PDM"/>
+                            <constraint firstItem="xpV-eU-mwd" firstAttribute="centerY" secondItem="86l-QK-sLg" secondAttribute="centerY" id="tGM-ek-Y24"/>
+                            <constraint firstItem="6kr-bO-MZc" firstAttribute="centerY" secondItem="xpV-eU-mwd" secondAttribute="centerY" id="ywX-nh-G8F"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="86l-QK-sLg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9qA-s4-p9w"/>
+                    <constraint firstAttribute="trailing" secondItem="86l-QK-sLg" secondAttribute="trailing" id="dK5-GF-7Ms"/>
+                    <constraint firstAttribute="bottom" secondItem="86l-QK-sLg" secondAttribute="bottom" id="sbe-bh-Qzt"/>
+                    <constraint firstItem="86l-QK-sLg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yLi-G6-UDe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkBoxButton" destination="xpV-eU-mwd" id="1rc-yj-OEE"/>
+                <outlet property="checkBoxTypeLabel" destination="6kr-bO-MZc" id="HVs-ro-A5g"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="62"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="blue-checkbox-30" width="30" height="30"/>
+    </resources>
+</document>

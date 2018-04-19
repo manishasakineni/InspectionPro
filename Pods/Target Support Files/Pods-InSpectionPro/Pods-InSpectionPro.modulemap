@@ -1,0 +1,6 @@
+framework module Pods_InSpectionPro {
+  umbrella header "Pods-InSpectionPro-umbrella.h"
+
+  export *
+  module * { export * }
+}

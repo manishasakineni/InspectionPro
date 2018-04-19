@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SignInCell" rowHeight="65" id="KGk-i7-Jjw" customClass="SignInCell" customModule="InSpectionPro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPN-bG-iYV">
+                        <rect key="frame" x="23" y="5" width="266" height="40.5"/>
+                        <color key="backgroundColor" red="0.098039215686274508" green="0.6705882352941176" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                        <state key="normal" title="SIGN IN">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.20784313725490194" green="0.20784313725490194" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="TPN-bG-iYV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="P0q-o2-swE"/>
+                    <constraint firstItem="TPN-bG-iYV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="aV1-lM-m0g"/>
+                    <constraint firstAttribute="bottom" secondItem="TPN-bG-iYV" secondAttribute="bottom" constant="4" id="mfX-9d-04g"/>
+                    <constraint firstAttribute="trailing" secondItem="TPN-bG-iYV" secondAttribute="trailing" constant="31" id="uTu-0L-GoS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="signInButton" destination="TPN-bG-iYV" id="2gM-3y-tnl"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="43.5"/>
+        </tableViewCell>
+    </objects>
+</document>
